@@ -1,0 +1,87 @@
+.bloco-projetos{
+    grid-column: 2/5;
+    display:none;
+    height:70vh;
+}
+
+.projetos{
+    width:100%;
+    margin-bottom:10rem;
+}
+
+.projetos h1{
+    font-size: 6rem;
+    line-height:1;
+    font-weight:400;
+    padding-left:2.5rem;
+    color:#cecece; 
+}
+
+.grid-conteudo-projetos{
+    display:none;
+    grid-template-columns: 1fr 2fr;
+}
+
+
+.img-projeto{
+    grid-column: 1/2;
+    padding:0 1rem;
+    display:flex;
+    justify-content:center;
+}
+
+.conteudo-projeto{
+    padding:0 1rem;
+
+}
+
+.titulo{
+    display:flex;
+    font-size:2.5rem;
+}
+
+.tecnologia{
+    margin-top:0.5rem;
+    font-size:1.6rem;
+}
+
+.descricao{
+    font-size:1rem;
+    grid-column: 2/3;
+    position:relative;
+    margin-top:2rem;
+    height:12rem;
+}
+
+.prox-projeto{
+    cursor:pointer;
+    margin-top:1rem;
+    display:flex;
+    width:150px;
+    height:50px;
+    background:#FF6B6B;
+    border-radius:10%;
+    transition: 0.3s;
+}
+
+.prox-projeto:hover{
+    background:#C44D58;
+}
+
+.prox-projeto p{
+    font-weight:bold;
+    color:#cecece;
+    display:flex;
+    margin:0 auto;
+    align-items:center;
+}
+
+.ativo-grid{
+    display:grid;
+}
+
+.logo-git{
+    margin-left:1.5rem;
+    padding-top:1rem;
+    height:27px;
+}
