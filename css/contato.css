@@ -1,0 +1,72 @@
+
+.bloco-contato{
+    grid-column: 2/5;
+    display:none;
+    height:70vh;
+}
+
+.contato{
+    width:100%;
+    margin-bottom:10rem;
+}
+
+.contato h1{
+    font-size: 6rem;
+    line-height:1;
+    font-weight:400;
+    padding-left:2.5rem;
+    color:var(--text-color); 
+}
+
+.rede{  
+    min-width: 150px;
+    height: 150px;
+    float: left;
+    margin-left: 20px;
+    transition:all 0.4s ease-out;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+
+.rede:hover{
+    border: 1px solid black;
+    cursor:pointer;
+    transform:translateY(-20px);
+    box-shadow:4px 30px 16px 0px black;
+}
+
+.rede#face{
+    margin-left: 0;
+}
+
+.logo-img{
+    height:5rem;
+    width:5rem;
+    margin:0px auto;
+    padding:35px;
+    width:80px;
+}
+
+.redes-sociais{
+    display:flex;
+    justify-content:center;
+    margin-top:15vh;
+}
+
+
+@media (max-width:1240px){
+    .redes-sociais{
+        flex-wrap: wrap;
+    }
+    .rede{
+        margin-left:0px;
+    }
+}
+
+@media (max-width:764px){
+   
+}

@@ -6,7 +6,7 @@
 
 .projetos{
     width:100%;
-    margin-bottom:10rem;
+    
 }
 
 .projetos h1{
@@ -14,7 +14,7 @@
     line-height:1;
     font-weight:400;
     padding-left:2.5rem;
-    color:#cecece; 
+    color:var(--text-color); 
 }
 
 .grid-conteudo-projetos{
@@ -32,21 +32,19 @@
 
 .conteudo-projeto{
     padding:0 1rem;
-
 }
 
 .titulo{
-    display:flex;
-    font-size:2.5rem;
+    font-size:3rem;
 }
 
 .tecnologia{
     margin-top:0.5rem;
-    font-size:1.6rem;
+    font-size:2rem;
 }
 
 .descricao{
-    font-size:1rem;
+    font-size:1.2rem;
     grid-column: 2/3;
     position:relative;
     margin-top:2rem;
@@ -55,22 +53,22 @@
 
 .prox-projeto{
     cursor:pointer;
-    margin-top:1rem;
     display:flex;
-    width:150px;
-    height:50px;
-    background:#FF6B6B;
+    width:12rem;
+    height:4rem;
+    background:var(--background-btn);
     border-radius:10%;
     transition: 0.3s;
+    margin-top:2rem;
 }
 
 .prox-projeto:hover{
-    background:#C44D58;
+    background:var(--hover-btn);
 }
 
 .prox-projeto p{
     font-weight:bold;
-    color:#cecece;
+    color:var(--text-color);
     display:flex;
     margin:0 auto;
     align-items:center;
@@ -80,8 +78,66 @@
     display:grid;
 }
 
-.logo-git{
-    margin-left:1.5rem;
-    padding-top:1rem;
-    height:27px;
+.link-text{
+    text-decoration:none;
+    color: white;
+    cursor:pointer;
+}
+
+.link-text::hover{
+    transform:translateY(-20px);
+    box-shadow:4px 30px 16px 0px black;
+}
+
+@media (max-width:1240px){
+    .titulo{
+        font-size:1.9rem;
+    }
+    .tecnologia{
+        font-size:1.3rem;
+    }
+    .descricao{
+        font-size:1rem;
+    }
+    .titulo-sobre{
+        font-size:1.5rem;
+    }
+    .conteudo-projeto{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .prox-projeto{
+        margin-top:2rem;   
+    }
+
+}
+
+@media (max-width:764px){
+    .titulo{
+        font-size:2rem;
+    }
+    .tecnologia{
+        font-size:1.5rem;
+    }
+    .descricao{
+        font-size:1rem;
+        text-align: center;
+    }
+    .img-projeto{
+        grid-column: 1/3;
+    }
+    .conteudo-projeto{
+        margin-top:5rem;
+        grid-column: 1/3;
+        display:flex;
+        justify-content:center;
+        flex-direction: column;
+    }
+    .prox-projeto{
+        margin-top:2rem;   
+    }
+    .projetos h1{
+        text-align:center;
+    }
 }

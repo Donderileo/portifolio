@@ -23,12 +23,12 @@
     text-transform: uppercase;
     font-size: 2rem;
     letter-spacing: .1em; 
-    color:#cecece;
+    color:var(--text-color);
     font-weight:800;
     transition: 0.3s;
 
 }
 
 .menu li a:hover{
-    color:#4ECDC4;
+    color:var(--highlight);
 }

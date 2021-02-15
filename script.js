@@ -23,8 +23,6 @@ function animaMenu(){
     });
 }
 
-animaMenu();
-
 
 function proxProjeto(){
     
@@ -51,3 +49,4 @@ function proxProjeto(){
 };
 
 proxProjeto();
+animaMenu();

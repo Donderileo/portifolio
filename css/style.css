@@ -1,3 +1,12 @@
+:root {
+    --background: #556270;
+    --text-color: #cecece;
+    --highlight:#4ECDC4;
+    --verdin: #C7F464;
+    --background-btn:#FF6B6B;
+    --hover-btn:#C44D58;
+}
+
 *{
     font-family: 'IBM Plex Mono';
     margin: 0;
@@ -16,12 +25,12 @@ body{
     display:grid;
     grid-template-columns: 0.2fr 0.8fr 3fr 0.8fr 0.2fr;
     height:100vh;
-    background:#556270;
+    background:var(--background);
 }
 
 .line{
     height:0.2rem;
-    background:#4ECDC4;
+    background:var(--highlight);
     grid-column: 1/3;
     margin: 1rem 0;
     margin-bottom:5rem;
@@ -38,7 +47,7 @@ body{
     object-fit:cover;
     position:relative;
     border-radius: 50%;
-    box-shadow: 0 0 2em white, 0 0 0 15px #556270, 0 0 0 25px#4ECDC4;
+    box-shadow: 0 0 2em white, 0 0 0 15px var(--background), 0 0 0 25px var(--highlight);
 }
 
 .grid-conteudo{
@@ -46,33 +55,10 @@ body{
     grid-template-columns: 1fr 2fr;
 }
 
-
-
-.bloco-habilidades{
-    grid-column: 2/5;
-    background:green;
-    display:none;
-}
-
-.bloco-contato{
-    grid-column: 2/5;
-    background:blue;
-    display:none;
-}
-
-
-.x{
-    color:#556270;
-    color:#4ECDC4;
-    color:#C7F464;
-    color:#FF6B6B;
-    color:#C44D58;  
-}
-
 .icon{
     margin-right:1rem;
     margin-top:1rem;
-    height:2rem;
-    width:2rem;
+    height:4rem;
+    width:4rem;
     float:left;
 }
